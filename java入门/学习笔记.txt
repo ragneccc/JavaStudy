@@ -1,0 +1,50 @@
+	一、基本概述
+1 标准格式：
+	public class MyFirstApp{
+	public static void main(String []args){
+		System.out.println("hello word");
+		//nihaoo
+			System.out.print("hello word");	
+		
+		//	System.out.println("hello word");
+			System.out.println("hello word");
+		}	
+	}
+
+2 javac ， java命令	
+	
+3 /**    */  文档注释（可以单独生成一个文档）
+
+4 JavaDoc 命令 （从源代码抽取文档，形成一个 API 文档）
+	javadoc -d 生成目标路径 源文件
+
+	
+	
+	
+	二、变量
+	1、	数据类型 格式 大小
+		标识符 
+		与c语言不同：变量要初始化（不会默认为0）
+		变量名区分大小写
+	2、数据类型
+		数据类型不可通用，不同类型的变量不能赋值
+		数据类型站的字节大小与平台无关
+		基本类型/引用类型
+	三、运算符
+		&& || 短路与、短路或  一个不成立就结束判断
+		& | 无论之钱的 结果是什么都往下运行
+		
+		源码： 正书0-     ，负数1-
+		反码：正书 = 源码 ，保留符号伪 负数取反
+		补码：证书 = 源码 ，负数 = 反码 + 1
+		
+	（负数 ）源码 = 补码取反  + 1
+	
+	四、条件语句 if 、else
+			System.out.println("  ");
+			
+			需要在 住类的前面加入 import java.until.Scanner;
+			Scanner input=new Scanner(System.in);
+			int holidays = input.nextInt();
+			
+		
