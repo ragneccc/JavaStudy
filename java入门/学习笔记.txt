@@ -1,11 +1,13 @@
 	一、基本概述
 1 标准格式：
+	Scanner input = new Scanner(System.in);
 	public class MyFirstApp{
 	public static void main(String []args){
 		System.out.println("hello word");
 		//nihaoo
 			System.out.print("hello word");	
-		
+		int a;
+		a=input.nextInt();
 		//	System.out.println("hello word");
 			System.out.println("hello word");
 		}	
@@ -29,7 +31,8 @@
 	2、数据类型
 		数据类型不可通用，不同类型的变量不能赋值
 		数据类型站的字节大小与平台无关
-		基本类型/引用类型
+			基本类型存放在 栈
+			引用类栈存放在 堆
 	三、运算符
 		&& || 短路与、短路或  一个不成立就结束判断
 		& | 无论之钱的 结果是什么都往下运行
@@ -46,5 +49,42 @@
 			需要在 住类的前面加入 import java.until.Scanner;
 			Scanner input=new Scanner(System.in);
 			int holidays = input.nextInt();
+	
+	五、循环语句
+		continue、break
+		（用法与c语言基本完全相同）
+	
+	六、数组 
+		1、语法
+			数据类型[] 数组名  (不同的声明语法与c语言)
+								//但是好像可以兼容c语言的声明语法
+				内存中  栈  堆
+				栈中存放数组在堆中的地址
+				堆中存放元素
+		2、元素存放形式
+			基本数据类型放的数据
+			引用类型放的地址
+    	3、新生成的数组对象初始值
+			引用初始化为 null
+			基本数据类型 数值型=0 字符型=（char）0 布尔=false
+		4、初始化数组
+			1）静态初始化
+				int[] score ={1,2,3};
+				或 int[] score = new int[]{1,2,3} (不允许在“[]”内输入个数)
+			3）动态获取
+				int[] score = new int[3];
+				Scanner input = new Scanner(System.in);
+				for(int i=0;i<3;i++){
+				score[i]=input.nextint();
+				 }
 			
+			int [] array;	//声明
+			array = new[3];	//创建
+			int [] array = new int[3];	//声明并创建
+			
+			
+			
+			
+	
+		
 		
