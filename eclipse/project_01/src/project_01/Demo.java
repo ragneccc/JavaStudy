@@ -1,23 +1,25 @@
 package project_01;
 
+import java.util.Scanner;
 public class Demo {
-
 	public static void main(String[] args) {
-		for(int i=9;i>=1;i--) {
-			for(int j=1;j<=i;j++) {
-						System.out.print(" ");	
-						
-					
-				}
+	Scanner input = new Scanner(System.in);
+	int x = input.nextInt();
+		int a[]= new int[x];
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=i+1;
 			
-			for(int k =9;k>=i*2-5;k-- )
-			{
-				System.out.print("*");
-			}
-			
-			System.out.println();
 		}
-				
+		System.out.println(add(a));		
 	}
-
+	static int add(int a[])
+	{
+		int sum = 0;
+		for(int i=0;i<a.length;i++)
+		{
+			sum+=a[i];
+		}
+		return sum;
+	}
 }
